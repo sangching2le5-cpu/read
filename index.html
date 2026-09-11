@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Journey of Zendaya — Reading Comprehension Test</title>
+<style>
+  :root{
+    --bg:#eef4fb;
+    --card:#ffffff;
+    --primary:#3d7dbf;
+    --primary-dark:#2c5f95;
+    --primary-soft:#e8f1fb;
+    --primary-soft2:#d3e5f8;
+    --text:#1c2b3a;
+    --muted:#5d6f83;
+    --border:#dbe7f4;
+    --ok:#1c8a5c;
+    --ok-bg:#e6f7ef;
+    --bad:#c04a44;
+    --bad-bg:#fdeceb;
+    --amber:#b8860b;
+    --radius:18px;
+    --shadow:0 6px 20px rgba(45,90,140,.08);
+  }
+
+  *{box-sizing:border-box;}
+
+  html{-webkit-text-size-adjust:100%;}
+
+  body{
+    margin:0;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    color:var(--text);
+    background:linear-gradient(180deg,#f4f9fe 0%, #e8f1fa 100%);
+    background-attachment:fixed;
+    padding-bottom:40px;
+  }
+
+  [hidden]{display:none !important;}
+
+  .wrap{
+    max-width:840px;
+    margin:0 auto;
+    padding:16px;
+  }
+
+  /* ---------- HEADER ---------- */
+  .site-header{
+    text-align:center;
+    padding:26px 8px 18px;
+  }
+  .eyebrow{
+    margin:0 0 6px;
+    font-size:.78rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--primary);
+    font-weight:700;
+  }
+  .site-header h1{
+    margin:0 0 4px;
+    font-size:1.75rem;
+    line-height:1.25;
+    letter-spacing:-.02em;
+    color:#16324f;
+  }
+  .subtitle{
+    margin:0 0 4px;
+    font-size:1.06rem;
+    font-weight:600;
+    color:var(--primary-dark);
+  }
+  .level-line{
+    margin:0 0 14px;
+    font-size:.92rem;
+    color:var(--muted);
+  }
+  .chips{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:center;
+  }
+  .chip{
+    display:inline-block;
+    background:#fff;
+    border:1px solid var(--primary-soft2);
+    color:var(--primary-dark);
+    font-size:.82rem;
+    font-weight:600;
+    padding:6px 13px;
+    border-radius:999px;
+    box-shadow:0 2px 6px rgba(45,90,140,.06);
+  }
+
+  /* ---------- CARDS ---------- */
+  .card{
+    background:var(--card);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    border:1px solid rgba(219,231,244,.9);
+    padding:20px;
+    margin-bottom:16px;
+  }
+
+  .card h2{
+    margin:0 0 12px;
+    font-size:1.12rem;
+    color:#16324f;
+    letter-spacing:-.01em;
+  }
+
+  /* ---------- PASSAGE ---------- */
+  .passage-head{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:12px;
+  }
+  .passage-head h2{margin:0;}
+
+  .passage-body{
+    border-top:1px solid var(--border);
+    padding-top:14px;
+  }
+  .passage-title{
+    margin:0 0 12px;
+    font-size:1.05rem;
+    color:var(--primary-dark);
+    text-align:center;
+    letter-spacing:.01em;
+  }
+  .passage-body p{
+    margin:0 0 14px;
+    text-align:justify;
+    line-height:1.8;
+    font-size:1rem;
+    color:#243447;
+  }
+  .passage-body p:last-child{margin-bottom:0;}
+  .passage-body em{font-style:italic;color:#1a3f66;}
+
+  /* ---------- BUTTONS ---------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    font:inherit;
+    font-weight:600;
+    font-size:1rem;
+    padding:13px 22px;
+    border-radius:14px;
+    border:1px solid transparent;
+    cursor:pointer;
+    transition:background .18s ease, border-color .18s ease, transform .12s ease, box-shadow .18s ease;
+    min-height:48px;
+    -webkit-tap-highlight-color:transparent;
+    text-align:center;
+  }
+  .btn.primary{
+    background:var(--primary);
+    color:#fff;
+    box-shadow:0 4px 12px rgba(61,125,191,.28);
+  }
+  .btn.primary:hover{background:var(--primary-dark);}
+  .btn.ghost{
+    background:#fff;
+    color:var(--primary-dark);
+    border-color:var(--primary-soft2);
+  }
+  .btn.ghost:hover{background:var(--primary-soft);}
+  .btn.danger{
+    background:var(--bad);
+    color:#fff;
+  }
+  .btn.danger:hover{background:#a63c37;}
+  .btn.small{
+    padding:9px 14px;
+    font-size:.86rem;
+    min-height:auto;
+    border-radius:11px;
+  }
+  .btn:disabled{
+    opacity:.42;
+    cursor:not-allowed;
+    box-shadow:none;
+  }
+  .btn:active:not(:disabled){transform:translateY(1px);}
+  .btn:focus-visible,
+  .option:focus-visible{
+    outline:3px solid #7fb2e5;
+    outline-offset:2px;
+  }
+
+  /* ---------- START PANEL ---------- */
+  .start-panel{
+    text-align:center;
+  }
+  .start-panel h2{
+    font-size:1.25rem;
+    margin-bottom:10px;
+  }
+  .start-panel p{
+    color:var(--muted);
+    margin:0 auto 18px;
+    max-width:520px;
+    font-size:.97rem;
+  }
+  .start-list{
+    list-style:none;
+    padding:0;
+    margin:0 auto 20px;
+    max-width:420px;
+    text-align:left;
+    display:grid;
+    gap:8px;
+  }
+  .start-list li{
+    background:var(--primary-soft);
+    border-radius:12px;
+    padding:10px 14px;
+    font-size:.9rem;
+    color:var(--primary-dark);
+    font-weight:500;
+  }
+
+  /* ---------- QUIZ ---------- */
+  .progress-wrap{margin-bottom:18px;}
+  .progress-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:.86rem;
+    font-weight:700;
+    color:var(--primary-dark);
+    margin-bottom:8px;
+  }
+  .progress{
+    height:12px;
+    background:#e3edf8;
+    border-radius:999px;
+    overflow:hidden;
+  }
+  .progress-fill{
+    height:100%;
+    width:10%;
+    border-radius:999px;
+    background:linear-gradient(90deg,#6aa8e0,#3d7dbf);
+    transition:width .35s ease;
+  }
+
+  .q-head{margin-bottom:8px;}
+  .skill-badge{
+    display:inline-block;
+    background:var(--primary-soft);
+    color:var(--primary-dark);
+    border:1px solid var(--primary-soft2);
+    font-size:.74rem;
+    font-weight:700;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    padding:5px 11px;
+    border-radius:999px;
+  }
+
+  .q-text{
+    font-size:1.1rem;
+    line-height:1.5;
+    margin:0 0 16px;
+    color:#16324f;
+  }
+
+  .options{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .option{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    width:100%;
+    text-align:left;
+    font:inherit;
+    font-size:1rem;
+    line-height:1.5;
+    color:var(--text);
+    background:#fff;
+    border:2px solid var(--border);
+    border-radius:14px;
+    padding:14px 16px;
+    cursor:pointer;
+    transition:border-color .16s ease, background .16s ease, box-shadow .16s ease;
+    min-height:56px;
+  }
+  .option:hover{
+    border-color:var(--primary-soft2);
+    background:#f9fcff;
+  }
+  .option.selected{
+    border-color:var(--primary);
+    background:var(--primary-soft);
+    box-shadow:0 3px 10px rgba(61,125,191,.15);
+  }
+  .opt-letter{
+    flex:0 0 30px;
+    height:30px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    font-weight:700;
+    font-size:.88rem;
+    background:#eef4fb;
+    color:var(--primary-dark);
+    transition:background .16s ease, color .16s ease;
+  }
+  .option.selected .opt-letter{
+    background:var(--primary);
+    color:#fff;
+  }
+  .opt-text{flex:1 1 auto;}
+  .opt-check{
+    flex:0 0 auto;
+    margin-left:auto;
+    color:var(--primary);
+    font-weight:800;
+    opacity:0;
+    transition:opacity .16s ease;
+    align-self:center;
+  }
+  .option.selected .opt-check{opacity:1;}
+
+  .quiz-message{
+    margin:14px 0 0;
+    background:#fff6e5;
+    border:1px solid #f2d9a0;
+    color:#8a6100;
+    font-size:.9rem;
+    font-weight:600;
+    padding:10px 14px;
+    border-radius:12px;
+  }
+
+  .q-nav{
+    display:flex;
+    gap:10px;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+    flex-wrap:wrap;
+  }
+  .q-nav .btn{flex:1 1 auto;min-width:120px;}
+
+  /* ---------- RESULTS ---------- */
+  .result-card{text-align:center;}
+  .result-title{
+    font-size:1.3rem;
+    margin-bottom:18px;
+  }
+  .score-circle{
+    width:186px;
+    height:186px;
+    border-radius:50%;
+    margin:0 auto 18px;
+    background:conic-gradient(var(--primary) calc(var(--pct) * 1%), #dde9f6 0);
+    display:grid;
+    place-items:center;
+    box-shadow:0 8px 22px rgba(45,90,140,.13);
+  }
+  .score-inner{
+    width:146px;
+    height:146px;
+    border-radius:50%;
+    background:#fff;
+    display:grid;
+    place-items:center;
+    align-content:center;
+    gap:2px;
+  }
+  .score-frac{
+    font-size:1.85rem;
+    font-weight:800;
+    color:#16324f;
+    line-height:1.1;
+    letter-spacing:-.02em;
+  }
+  .score-pct{
+    font-size:1rem;
+    font-weight:700;
+    color:var(--primary);
+  }
+  .result-msg{
+    font-size:1.02rem;
+    font-weight:600;
+    margin:0 0 6px;
+    color:#16324f;
+  }
+  .result-msg-vi{
+    font-size:.9rem;
+    color:var(--muted);
+    margin:0 0 20px;
+    font-style:italic;
+  }
+  .result-actions{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  /* ---------- SKILLS ---------- */
+  .skill-row{margin-bottom:14px;}
+  .skill-row:last-child{margin-bottom:0;}
+  .skill-head{
+    display:flex;
+    justify-content:space-between;
+    font-size:.88rem;
+    font-weight:600;
+    color:#243447;
+    margin-bottom:6px;
+  }
+  .skill-head span:last-child{color:var(--primary-dark);}
+  .bar{
+    height:10px;
+    background:#e7f0fa;
+    border-radius:999px;
+    overflow:hidden;
+  }
+  .bar-fill{
+    height:100%;
+    border-radius:999px;
+    background:var(--primary);
+    transition:width .5s ease;
+  }
+  .bar-fill.good{background:linear-gradient(90deg,#4fbf8b,#1c8a5c);}
+  .bar-fill.mid{background:linear-gradient(90deg,#f0c05a,#d09a12);}
+  .bar-fill.low{background:linear-gradient(90deg,#e8837d,#c04a44);}
+
+  /* ---------- REVIEW ---------- */
+  .review-item{
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:16px;
+    margin-bottom:14px;
+    background:#fdfeff;
+  }
+  .review-item:last-child{margin-bottom:0;}
+  .review-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:10px;
+  }
+  .review-num{
+    font-weight:800;
+    font-size:.9rem;
+    color:var(--primary-dark);
+  }
+  .review-skill{
+    font-size:.72rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    color:var(--muted);
+    background:#f0f6fc;
+    padding:4px 9px;
+    border-radius:999px;
+    border:1px solid var(--border);
+  }
+  .review-q{
+    font-weight:600;
+    margin:0 0 12px;
+    font-size:1rem;
+    line-height:1.5;
+    color:#16324f;
+  }
+  .ans-line{
+    font-size:.92rem;
+    margin:0 0 6px;
+    padding:9px 12px;
+    border-radius:10px;
+    line-height:1.5;
+  }
+  .ans-line.user{background:#f3f7fc;border:1px solid var(--border);}
+  .ans-line.correct{background:var(--ok-bg);border:1px solid #b9e6cf;color:#14603f;}
+  .ans-line b{font-weight:700;}
+  .status{
+    display:inline-block;
+    font-weight:800;
+    font-size:.88rem;
+    padding:5px 12px;
+    border-radius:999px;
+    margin:8px 0 10px;
+  }
+  .status.ok{background:var(--ok-bg);color:var(--ok);border:1px solid #b9e6cf;}
+  .status.no{background:var(--bad-bg);color:var(--bad);border:1px solid #f3c6c3;}
+
+  .expl{
+    font-size:.93rem;
+    margin:0 0 8px;
+    color:#2b3b4d;
+  }
+  .expl b{color:#16324f;}
+  .evidence{
+    font-size:.9rem;
+    font-style:italic;
+    color:#3c5670;
+    background:var(--primary-soft);
+    border-left:4px solid var(--primary);
+    padding:10px 13px;
+    border-radius:0 10px 10px 0;
+    margin:0;
+  }
+  .evidence b{font-style:normal;}
+
+  .vocab-box{
+    margin-top:12px;
+    background:#f7fbff;
+    border:1px dashed var(--primary-soft2);
+    border-radius:12px;
+    padding:12px 14px;
+    font-size:.88rem;
+    color:#2b3b4d;
+    line-height:1.6;
+  }
+  .vocab-box .v-title{
+    font-weight:800;
+    color:var(--primary-dark);
+    margin-bottom:4px;
+    font-size:.8rem;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+  }
+  .vocab-box .v-word{font-weight:700;color:#16324f;}
+  .vocab-box .v-ipa{color:var(--muted);font-weight:500;}
+  .vocab-box .v-vi{color:#1c8a5c;font-weight:600;}
+
+  /* ---------- TOOLBAR / FOOTER ---------- */
+  .toolbar{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:8px 0 4px;
+  }
+
+  .toast{
+    position:fixed;
+    left:50%;
+    bottom:22px;
+    transform:translateX(-50%);
+    background:#16324f;
+    color:#fff;
+    font-size:.88rem;
+    font-weight:600;
+    padding:12px 20px;
+    border-radius:999px;
+    box-shadow:0 8px 22px rgba(22,50,79,.3);
+    z-index:60;
+    max-width:90vw;
+    text-align:center;
+  }
+
+  /* ---------- MODAL ---------- */
+  .modal{
+    position:fixed;
+    inset:0;
+    background:rgba(20,42,66,.5);
+    display:grid;
+    place-items:center;
+    padding:20px;
+    z-index:80;
+  }
+  .modal-box{
+    background:#fff;
+    border-radius:18px;
+    padding:24px 22px;
+    max-width:400px;
+    width:100%;
+    box-shadow:0 20px 50px rgba(16,40,66,.3);
+    text-align:center;
+  }
+  .modal-box h3{
+    margin:0 0 10px;
+    font-size:1.15rem;
+    color:#16324f;
+  }
+  .modal-box p{
+    margin:0 0 20px;
+    color:var(--muted);
+    font-size:.95rem;
+  }
+  .modal-actions{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+  .modal-actions .btn{flex:1 1 120px;}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:520px){
+    .wrap{padding:12px;}
+    .card{padding:16px;border-radius:16px;}
+    .site-header h1{font-size:1.42rem;}
+    .subtitle{font-size:.98rem;}
+    .passage-body p{text-align:left;font-size:.97rem;line-height:1.75;}
+    .q-text{font-size:1.03rem;}
+    .option{padding:13px 14px;font-size:.96rem;}
+    .q-nav .btn{flex:1 1 100%;}
+    .score-circle{width:164px;height:164px;}
+    .score-inner{width:128px;height:128px;}
+    .score-frac{font-size:1.6rem;}
+  }
+
+  @media (min-width:900px){
+    .site-header h1{font-size:2.05rem;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important;animation:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="site-header">
+    <p class="eyebrow">English Reading Practice</p>
+    <h1>The Journey of Zendaya</h1>
+    <p class="subtitle">Reading Comprehension Test</p>
+    <p class="level-line">B1–B2 English Reading Practice</p>
+    <div class="chips">
+      <span class="chip">Level: B1–B2</span>
+      <span class="chip">Questions: 10</span>
+      <span class="chip">Type: Multiple Choice</span>
+    </div>
+  </header>
+
+  <!-- ============ READING PASSAGE ============ -->
+  <section class="card passage-card" aria-labelledby="passageHeading">
+    <div class="passage-head">
+      <h2 id="passageHeading">Reading Passage</h2>
+      <button id="togglePassage" class="btn ghost small" aria-expanded="true" aria-controls="passageBody">
+        Show / Hide Reading Passage
+      </button>
+    </div>
+    <div id="passageBody" class="passage-body">
+      <h3 class="passage-title">The Journey of Zendaya</h3>
+      <p>Zendaya Coleman, known simply as Zendaya, is one of the most versatile and influential artists of her generation. Born in Oakland, California, in 1996, her early life was deeply connected to the arts. Her mother worked as a house manager at a local theater, where Zendaya spent countless hours watching performances and learning about stagecraft. Inspired by these experiences, she began her acting career at a young age, performing in local theater productions and modeling for major brands before making her television debut.</p>
+      <p>Her big break came in 2010 when she landed a starring role on the Disney Channel sitcom <em>Shake It Up</em>. The show quickly made her a household name among teenagers. However, rather than remaining confined to child roles, Zendaya made deliberate decisions to transition into mature, complex projects. Her determination paid off when she took on the lead role of Rue Bennett, a struggling teenager, in the critically acclaimed drama series <em>Euphoria</em>. Her intense, authentic performance earned her two Primetime Emmy Awards, making her the youngest two-time winner of the Outstanding Lead Actress category.</p>
+      <p>Beyond television, Zendaya successfully expanded her career into blockbuster films. She achieved global recognition for her role as MJ in the Marvel Cinematic Universe’s <em>Spider-Man</em> trilogy, as well as starring in sci-fi epics like <em>Dune</em>. Her ability to portray diverse characters—from a high-flying acrobat in <em>The Greatest Showman</em> to a fiercely independent warrior in a distant sci-fi universe—demonstrates her remarkable artistic range.</p>
+      <p>In addition to her acting achievements, Zendaya has established herself as a global fashion icon and a respected philanthropist. She regularly uses her platform to advocate for diversity in the entertainment industry and support social justice initiatives. Through careful career choices and an unwavering commitment to authenticity, Zendaya has transformed from a teenage television star into a powerful figure in modern culture, proving that passion and resilience can lead to extraordinary success.</p>
+    </div>
+  </section>
+
+  <main>
+    <!-- ============ START PANEL ============ -->
+    <section id="startPanel" class="card start-panel" aria-labelledby="startHeading">
+      <h2 id="startHeading">Ready to begin?</h2>
+      <p>Read the passage above carefully, then answer 10 multiple-choice questions. You will see one question at a time, and you can change your answer before submitting.</p>
+      <ul class="start-list">
+        <li>📖 10 multiple-choice questions</li>
+        <li>⏱️ No time limit — work at your own pace</li>
+        <li>🔀 Questions and answer choices are shuffled</li>
+        <li>📊 You will get a full review and skill analysis</li>
+      </ul>
+      <button id="startBtn" class="btn primary">Start Test</button>
+    </section>
+
+    <!-- ============ QUIZ PANEL ============ -->
+    <section id="quizPanel" class="card quiz-panel" aria-labelledby="questionText" hidden>
+      <div class="progress-wrap">
+        <div class="progress-top">
+          <span id="qCounter">Question 1 of 10</span>
+          <span id="qPercent">10%</span>
+        </div>
+        <div class="progress" id="progressBar" role="progressbar" aria-valuemin="1" aria-valuemax="10" aria-valuenow="1" aria-label="Test progress">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+
+      <div class="q-head">
+        <span class="skill-badge" id="skillBadge">Main Idea</span>
+      </div>
+
+      <h2 class="q-text" id="questionText"></h2>
+
+      <div class="options" id="optionsList" role="radiogroup" aria-labelledby="questionText"></div>
+
+      <p class="quiz-message" id="quizMessage" role="status" aria-live="polite" hidden></p>
+
+      <div class="q-nav">
+        <button id="prevBtn" class="btn ghost" type="button">← Previous</button>
+        <button id="nextBtn" class="btn primary" type="button">Next →</button>
+        <button id="submitBtn" class="btn primary" type="button" hidden>Submit Test</button>
+      </div>
+    </section>
+
+    <!-- ============ RESULT PANEL ============ -->
+    <section id="resultPanel" hidden></section>
+  </main>
+
+  <footer class="toolbar">
+    <button id="resetTestBtn" class="btn ghost small" type="button">Reset Test</button>
+    <button id="clearSavedBtn" class="btn ghost small" type="button">Clear Saved Progress</button>
+  </footer>
+
+</div>
+
+<!-- ============ MODAL ============ -->
+<div id="modal" class="modal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+    <h3 id="modalTitle">Reset Test</h3>
+    <p id="modalDesc">Are you sure you want to reset the test?</p>
+    <div class="modal-actions">
+      <button id="modalCancel" class="btn ghost" type="button">Cancel</button>
+      <button id="modalConfirm" class="btn danger" type="button">Reset</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* =========================================================
+   1. QUESTION DATA
+   ========================================================= */
+const QUESTIONS = [
+  {
+    id: 1,
+    question: "What is the main idea of the passage?",
+    options: [
+      "Zendaya became famous only because of her role in Spider-Man.",
+      "Zendaya transitioned successfully from a child actress to a respected, versatile star.",
+      "Zendaya prefers working in fashion over acting in television shows.",
+      "Zendaya's career ended after her success on the Disney Channel."
+    ],
+    correct: 1,
+    skill: "Main Idea",
+    explanation: "The whole passage follows Zendaya's development from a teenage television actress into a respected and versatile star in television, film, fashion, and philanthropy. The other options are either too narrow or contradict the text.",
+    evidence: "“Zendaya has transformed from a teenage television star into a powerful figure in modern culture, proving that passion and resilience can lead to extraordinary success.”"
+  },
+  {
+    id: 2,
+    question: "Where did Zendaya first get exposed to the world of performance and theater?",
+    options: [
+      "At a modeling agency in California",
+      "At the venue where her mother worked",
+      "During the filming of her first Disney show",
+      "At an award ceremony in Oakland"
+    ],
+    correct: 1,
+    skill: "Specific Details",
+    explanation: "The passage explains that her mother worked as a house manager at a local theater, and Zendaya spent many hours there watching performances and learning about stagecraft.",
+    evidence: "“Her mother worked as a house manager at a local theater, where Zendaya spent countless hours watching performances and learning about stagecraft.”"
+  },
+  {
+    id: 3,
+    question: "According to the text, which role earned Zendaya two Primetime Emmy Awards?",
+    options: [
+      "MJ in Spider-Man",
+      "A high-flying acrobat in The Greatest Showman",
+      "Rue Bennett in Euphoria",
+      "A character in Shake It Up"
+    ],
+    correct: 2,
+    skill: "Specific Details",
+    explanation: "The text states that her performance as Rue Bennett in Euphoria earned her two Primetime Emmy Awards.",
+    evidence: "“Her intense, authentic performance earned her two Primetime Emmy Awards, making her the youngest two-time winner of the Outstanding Lead Actress category.”"
+  },
+  {
+    id: 4,
+    question: "What does the word “versatile” in paragraph 1 most likely mean?",
+    options: [
+      "Able to adapt or do many different things well",
+      "Extremely wealthy and powerful",
+      "Shy and unwilling to take risks",
+      "Famous only within a single country"
+    ],
+    correct: 0,
+    skill: "Vocabulary in Context",
+    explanation: "“Versatile” describes a person who can do many different things well. The passage supports this by showing Zendaya working successfully in television, film, fashion, and philanthropy.",
+    evidence: "“Zendaya Coleman, known simply as Zendaya, is one of the most versatile and influential artists of her generation.”",
+    vocab: {
+      word: "versatile",
+      ipa: "/ˈvɜːsətaɪl/",
+      meaning: "able to do many different things well",
+      vi: "đa năng, linh hoạt"
+    }
+  },
+  {
+    id: 5,
+    question: "In paragraph 2, what does the word “confined” mean?",
+    options: [
+      "Restricted or kept within limits",
+      "Allowed to move freely",
+      "Encouraged to try new things",
+      "Rewarded with high pay"
+    ],
+    correct: 0,
+    skill: "Vocabulary in Context",
+    explanation: "“Confined” means restricted or limited. In the passage it means Zendaya did not want to stay limited to children's roles only.",
+    evidence: "“rather than remaining confined to child roles, Zendaya made deliberate decisions to transition into mature, complex projects.”",
+    vocab: {
+      word: "confined",
+      ipa: "/kənˈfaɪnd/",
+      meaning: "restricted or limited",
+      vi: "bị giới hạn, bị bó hẹp"
+    }
+  },
+  {
+    id: 6,
+    question: "What does the word “Her” in paragraph 2 line 5 refer to?",
+    options: [
+      "Zendaya's mother",
+      "Rue Bennett",
+      "A house manager",
+      "Zendaya"
+    ],
+    correct: 3,
+    skill: "Reference Words",
+    explanation: "“Her” refers back to Zendaya — she is the person who made the deliberate career decisions, and it is her determination that paid off.",
+    evidence: "“Zendaya made deliberate decisions to transition into mature, complex projects. Her determination paid off when she took on the lead role of Rue Bennett…”"
+  },
+  {
+    id: 7,
+    question: "Based on paragraph 2, what can be inferred about Zendaya's career choices?",
+    options: [
+      "She let her agents make all of her choices for her.",
+      "She carefully chose roles that would help her grow as an actress.",
+      "She wanted to stay on children's television programs for as long as possible.",
+      "She won awards without putting much effort into her acting."
+    ],
+    correct: 1,
+    skill: "Inference",
+    explanation: "The passage says she made “deliberate decisions” to move into mature, complex projects. This suggests she chose roles carefully in order to grow as an actress.",
+    evidence: "“rather than remaining confined to child roles, Zendaya made deliberate decisions to transition into mature, complex projects.”"
+  },
+  {
+    id: 8,
+    question: "What can be inferred about Zendaya's impact outside of acting?",
+    options: [
+      "She focuses exclusively on her acting and avoids public issues.",
+      "She uses her high profile to influence positive social change.",
+      "She only designs clothes for famous Hollywood actors.",
+      "She has abandoned her artistic background to work full-time in charity."
+    ],
+    correct: 1,
+    skill: "Inference",
+    explanation: "The passage states that she regularly uses her platform to advocate for diversity and to support social justice initiatives. This shows she uses her fame to encourage positive change.",
+    evidence: "“She regularly uses her platform to advocate for diversity in the entertainment industry and support social justice initiatives.”"
+  },
+  {
+    id: 9,
+    question: "What is the writer's main purpose in writing this biography?",
+    options: [
+      "To criticize Zendaya's early choices on the Disney Channel",
+      "To persuade readers to watch the TV show Euphoria",
+      "To highlight Zendaya's professional achievements and growth",
+      "To compare Zendaya with other actors of her generation"
+    ],
+    correct: 2,
+    skill: "Writer's Purpose",
+    explanation: "The writer presents a factual overview of Zendaya's career and achievements, showing how she grew from a child actress into a major cultural figure. There is no criticism and no attempt to persuade readers to watch a specific show.",
+    evidence: "“Through careful career choices and an unwavering commitment to authenticity, Zendaya has transformed from a teenage television star into a powerful figure in modern culture…”"
+  },
+  {
+    id: 10,
+    question: "What is the overall tone of the writer toward Zendaya?",
+    options: [
+      "Critical and doubtful",
+      "Neutral and uninterested",
+      "Admiring and appreciative",
+      "Humorous and lighthearted"
+    ],
+    correct: 2,
+    skill: "Tone",
+    explanation: "The writer uses positive, praising language such as “remarkable artistic range,” “critically acclaimed,” and “extraordinary success.” This shows an admiring and appreciative tone.",
+    evidence: "“…demonstrates her remarkable artistic range.” / “…proving that passion and resilience can lead to extraordinary success.”"
+  }
+];
+
+const SKILLS = [
+  "Main Idea",
+  "Specific Details",
+  "Vocabulary in Context",
+  "Reference Words",
+  "Inference",
+  "Writer's Purpose",
+  "Tone"
+];
+
+/* =========================================================
+   2. DOM REFERENCES
+   ========================================================= */
+const startPanel   = document.getElementById('startPanel');
+const quizPanel    = document.getElementById('quizPanel');
+const resultPanel  = document.getElementById('resultPanel');
+
+const qCounter     = document.getElementById('qCounter');
+const qPercent     = document.getElementById('qPercent');
+const progressBar  = document.getElementById('progressBar');
+const progressFill = document.getElementById('progressFill');
+const skillBadge   = document.getElementById('skillBadge');
+const questionText = document.getElementById('questionText');
+const optionsList  = document.getElementById('optionsList');
+const quizMessage  = document.getElementById('quizMessage');
+
+const prevBtn      = document.getElementById('prevBtn');
+const nextBtn      = document.getElementById('nextBtn');
+const submitBtn    = document.getElementById('submitBtn');
+const startBtn     = document.getElementById('startBtn');
+
+const togglePassage = document.getElementById('togglePassage');
+const passageBody   = document.getElementById('passageBody');
+
+const resetTestBtn  = document.getElementById('resetTestBtn');
+const clearSavedBtn = document.getElementById('clearSavedBtn');
+
+const modal         = document.getElementById('modal');
+const modalCancel   = document.getElementById('modalCancel');
+const modalConfirm  = document.getElementById('modalConfirm');
+
+/* =========================================================
+   3. STATE + PERSISTENCE
+   ========================================================= */
+const STORAGE_KEY = 'zendaya_reading_test_v1';
+let state = defaultState();
+let messageTimer = null;
+let lastFocusedElement = null;
+
+function defaultState(){
+  return {
+    started: false,
+    submitted: false,
+    current: 0,
+    order: [],
+    optionOrder: {},
+    answers: {},
+    score: 0,
+    total: QUESTIONS.length,
+    result: null
+  };
+}
+
+function saveState(){
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  } catch (e) {
+    /* localStorage unavailable — fail silently */
+  }
+}
+
+function loadState(){
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    return isValidState(parsed) ? parsed : null;
+  } catch (e) {
+    return null;
+  }
+}
+
+function isValidState(s){
+  if (!s || typeof s !== 'object') return false;
+  if (!Array.isArray(s.order) || s.order.length !== QUESTIONS.length) return false;
+  const sorted = s.order.slice().sort(function(a, b){ return a - b; });
+  for (let i = 0; i < QUESTIONS.length; i++){
+    if (sorted[i] !== QUESTIONS[i].id) return false;
+  }
+  if (!s.optionOrder || typeof s.optionOrder !== 'object') return false;
+  for (let i = 0; i < QUESTIONS.length; i++){
+    const id = QUESTIONS[i].id;
+    const arr = s.optionOrder[id];
+    if (!Array.isArray(arr) || arr.length !== 4) return false;
+  }
+  if (!s.answers || typeof s.answers !== 'object') return false;
+  if (typeof s.current !== 'number' || s.current < 0 || s.current >= QUESTIONS.length) return false;
+  return true;
+}
+
+function clearSaved(){
+  try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+}
+
+/* =========================================================
+   4. HELPERS
+   ========================================================= */
+function byId(id){
+  return QUESTIONS.find(function(q){ return q.id === id; });
+}
+
+function shuffle(arr){
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    const tmp = a[i];
+    a[i] = a[j];
+    a[j] = tmp;
+  }
+  return a;
+}
+
+function escapeHtml(str){
+  return String(str).replace(/[&<>"']/g, function(c){
+    return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c];
+  });
+}
+
+function letterFor(pos){
+  return String.fromCharCode(65 + pos);
+}
+
+function scrollToQuiz(){
+  if (quizPanel.hidden) return;
+  const rect = quizPanel.getBoundingClientRect();
+  const y = rect.top + window.pageYOffset - 12;
+  window.scrollTo({ top: y < 0 ? 0 : y, behavior: 'smooth' });
+}
+
+function showQuizMessage(text){
+  quizMessage.textContent = text;
+  quizMessage.hidden = false;
+  if (messageTimer) clearTimeout(messageTimer);
+  messageTimer = setTimeout(function(){
+    quizMessage.hidden = true;
+  }, 3500);
+}
+
+function hideQuizMessage(){
+  quizMessage.hidden = true;
+  if (messageTimer) clearTimeout(messageTimer);
+}
+
+function showToast(text){
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.setAttribute('role', 'status');
+  toast.textContent = text;
+  document.body.appendChild(toast);
+  setTimeout(function(){
+    if (toast.parentNode) toast.parentNode.removeChild(toast);
+  }, 2400);
+}
+
+/* =========================================================
+   5. SHUFFLING
+   ========================================================= */
+function shuffleQuestions(){
+  state.order = shuffle(QUESTIONS.map(function(q){ return q.id; }));
+}
+
+function shuffleOptions(){
+  state.optionOrder = {};
+  QUESTIONS.forEach(function(q){
+    state.optionOrder[q.id] = shuffle(q.options.map(function(_, i){ return i; }));
+  });
+}
+
+/* =========================================================
+   6. TEST FLOW
+   ========================================================= */
+function initializeTest(){
+  const saved = loadState();
+  state = saved ? saved : defaultState();
+  render();
+}
+
+function startTest(){
+  state = defaultState();
+  state.started = true;
+  state.current = 0;
+  shuffleQuestions();
+  shuffleOptions();
+  saveState();
+  render();
+  scrollToQuiz();
+}
+
+function render(){
+  startPanel.hidden  = state.started;
+  quizPanel.hidden   = !(state.started && !state.submitted);
+  resultPanel.hidden = !(state.started && state.submitted);
+
+  if (state.started && state.submitted){
+    renderResults();
+  } else if (state.started){
+    renderQuestion();
+  }
+}
+
+function renderQuestion(){
+  const total = state.order.length;
+  const qid = state.order[state.current];
+  const q = byId(qid);
+
+  qCounter.textContent = 'Question ' + (state.current + 1) + ' of ' + total;
+
+  const pct = Math.round(((state.current + 1) / total) * 100);
+  progressFill.style.width = pct + '%';
+  qPercent.textContent = pct + '%';
+  progressBar.setAttribute('aria-valuemin', '1');
+  progressBar.setAttribute('aria-valuemax', String(total));
+  progressBar.setAttribute('aria-valuenow', String(state.current + 1));
+
+  skillBadge.textContent = q.skill;
+  questionText.textContent = q.question;
+
+  optionsList.innerHTML = '';
+  const order = state.optionOrder[qid];
+  const selected = state.answers[qid];
+
+  order.forEach(function(origIdx, pos){
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'option' + (selected === origIdx ? ' selected' : '');
+    btn.setAttribute('role', 'radio');
+    btn.setAttribute('aria-checked', selected === origIdx ? 'true' : 'false');
+    btn.dataset.orig = String(origIdx);
+
+    const letterSpan = document.createElement('span');
+    letterSpan.className = 'opt-letter';
+    letterSpan.textContent = letterFor(pos);
+
+    const textSpan = document.createElement('span');
+    textSpan.className = 'opt-text';
+    textSpan.textContent = q.options[origIdx];
+
+    const checkSpan = document.createElement('span');
+    checkSpan.className = 'opt-check';
+    checkSpan.setAttribute('aria-hidden', 'true');
+    checkSpan.textContent = '✓';
+
+    btn.appendChild(letterSpan);
+    btn.appendChild(textSpan);
+    btn.appendChild(checkSpan);
+
+    btn.addEventListener('click', function(){
+      selectAnswer(origIdx);
+    });
+
+    optionsList.appendChild(btn);
+  });
+
+  prevBtn.disabled = state.current === 0;
+
+  const isLast = state.current === total - 1;
+  nextBtn.hidden = isLast;
+  submitBtn.hidden = !isLast;
+
+  hideQuizMessage();
+}
+
+function selectAnswer(origIdx){
+  const qid = state.order[state.current];
+  state.answers[qid] = origIdx;
+  saveState();
+
+  const buttons = optionsList.querySelectorAll('.option');
+  Array.prototype.forEach.call(buttons, function(btn){
+    const isSel = Number(btn.dataset.orig) === origIdx;
+    btn.classList.toggle('selected', isSel);
+    btn.setAttribute('aria-checked', isSel ? 'true' : 'false');
+  });
+
+  hideQuizMessage();
+}
+
+function nextQuestion(){
+  const qid = state.order[state.current];
+  if (state.answers[qid] === undefined){
+    showQuizMessage('Please select an answer before continuing.');
+    return;
+  }
+  if (state.current < state.order.length - 1){
+    state.current += 1;
+    saveState();
+    renderQuestion();
+    scrollToQuiz();
+  }
+}
+
+function previousQuestion(){
+  if (state.current > 0){
+    state.current -= 1;
+    saveState();
+    renderQuestion();
+    scrollToQuiz();
+  }
+}
+
+function submitTest(){
+  const currentQid = state.order[state.current];
+  if (state.answers[currentQid] === undefined){
+    showQuizMessage('Please select an answer before continuing.');
+    return;
+  }
+
+  let firstUnanswered = -1;
+  for (let i = 0; i < state.order.length; i++){
+    if (state.answers[state.order[i]] === undefined){
+      firstUnanswered = i;
+      break;
+    }
+  }
+
+  if (firstUnanswered !== -1){
+    state.current = firstUnanswered;
+    saveState();
+    renderQuestion();
+    scrollToQuiz();
+    showQuizMessage('Please answer all questions before submitting.');
+    return;
+  }
+
+  const score = calculateScore();
+  state.score = score;
+  state.submitted = true;
+  state.result = {
+    score: score,
+    total: state.order.length,
+    percent: Math.round((score / state.order.length) * 100),
+    skillStats: computeSkillStats(),
+    date: new Date().toISOString()
+  };
+
+  saveState();
+  render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function calculateScore(){
+  let score = 0;
+  state.order.forEach(function(id){
+    const q = byId(id);
+    if (state.answers[id] === q.correct) score += 1;
+  });
+  return score;
+}
+
+function computeSkillStats(){
+  const stats = {};
+  SKILLS.forEach(function(sk){
+    stats[sk] = { correct: 0, total: 0 };
+  });
+
+  state.order.forEach(function(id){
+    const q = byId(id);
+    if (!stats[q.skill]) stats[q.skill] = { correct: 0, total: 0 };
+    stats[q.skill].total += 1;
+    if (state.answers[id] === q.correct) stats[q.skill].correct += 1;
+  });
+
+  return stats;
+}
+
+/* =========================================================
+   7. RESULTS
+   ========================================================= */
+function getPerformanceMessage(pct){
+  if (pct >= 90){
+    return {
+      en: 'Excellent! You have a very strong understanding of the passage.',
+      vi: 'Xuất sắc! Bạn hiểu bài đọc rất tốt. Hãy tiếp tục luyện tập với các bài đọc khó hơn.'
+    };
+  }
+  if (pct >= 70){
+    return {
+      en: 'Good job! You understand most of the main ideas and details.',
+      vi: 'Làm tốt lắm! Bạn nắm được hầu hết ý chính và chi tiết. Hãy chú ý thêm các câu hỏi suy luận.'
+    };
+  }
+  if (pct >= 50){
+    return {
+      en: 'Fair attempt. Review the passage and pay attention to supporting details and vocabulary in context.',
+      vi: 'Cố gắng thêm nhé! Hãy đọc lại bài và chú ý đến chi tiết hỗ trợ và từ vựng theo ngữ cảnh.'
+    };
+  }
+  return {
+    en: 'Keep practising. Read the passage again and focus on the main ideas, details, and context clues.',
+    vi: 'Hãy luyện tập thêm. Đọc lại bài và tập trung vào ý chính, chi tiết và manh mối ngữ cảnh.'
+  };
+}
+
+function renderResults(){
+  const total = state.order.length;
+  const score = state.score;
+  const pct = total ? Math.round((score / total) * 100) : 0;
+  const msg = getPerformanceMessage(pct);
+
+  const stats = (state.result && state.result.skillStats)
+    ? state.result.skillStats
+    : computeSkillStats();
+
+  /* ---- Skill analysis ---- */
+  let skillHtml = '';
+  SKILLS.forEach(function(sk){
+    const st = stats[sk];
+    if (!st || st.total === 0) return;
+    const p = Math.round((st.correct / st.total) * 100);
+    const cls = p >= 80 ? 'good' : (p >= 50 ? 'mid' : 'low');
+    skillHtml +=
+      '<div class="skill-row">' +
+        '<div class="skill-head"><span>' + escapeHtml(sk) + '</span><span>' + st.correct + '/' + st.total + '</span></div>' +
+        '<div class="bar"><div class="bar-fill ' + cls + '" style="width:' + p + '%"></div></div>' +
+      '</div>';
+  });
+
+  /* ---- Review ---- */
+  let reviewHtml = '';
+
+  state.order.forEach(function(id, index){
+    const q = byId(id);
+    const order = state.optionOrder[id] || q.options.map(function(_, k){ return k; });
+
+    const userOrig = state.answers[id];
+    const isCorrect = userOrig === q.correct;
+
+    const correctPos = order.indexOf(q.correct);
+    const correctLetter = letterFor(correctPos < 0 ? 0 : correctPos);
+    const correctText = escapeHtml(q.options[q.correct]);
+
+    let userLetter = '—';
+    let userText = '(no answer)';
+    if (userOrig !== undefined && userOrig !== null){
+      const up = order.indexOf(userOrig);
+      userLetter = letterFor(up < 0 ? 0 : up);
+      userText = escapeHtml(q.options[userOrig]);
+    }
+
+    let vocabHtml = '';
+    if (q.vocab){
+      vocabHtml =
+        '<div class="vocab-box">' +
+          '<div class="v-title">Vocabulary Support</div>' +
+          '<div><span class="v-word">' + escapeHtml(q.vocab.word) + '</span> ' +
+          '<span class="v-ipa">' + escapeHtml(q.vocab.ipa) + '</span></div>' +
+          '<div>= ' + escapeHtml(q.vocab.meaning) + '</div>' +
+          '<div class="v-vi">Vietnamese: ' + escapeHtml(q.vocab.vi) + '</div>' +
+        '</div>';
+    }
+
+    reviewHtml +=
+      '<div class="review-item">' +
+        '<div class="review-top">' +
+          '<span class="review-num">Question ' + (index + 1) + '</span>' +
+          '<span class="review-skill">' + escapeHtml(q.skill) + '</span>' +
+        '</div>' +
+        '<p class="review-q">' + escapeHtml(q.question) + '</p>' +
+        '<p class="ans-line user"><b>Your answer:</b> ' + userLetter + '. ' + userText + '</p>' +
+        '<p class="ans-line correct"><b>Correct answer:</b> ' + correctLetter + '. ' + correctText + '</p>' +
+        '<div class="status ' + (isCorrect ? 'ok' : 'no') + '">' +
+          (isCorrect ? '✅ Correct' : '❌ Incorrect') +
+        '</div>' +
+        '<p class="expl"><b>Explanation:</b> ' + escapeHtml(q.explanation) + '</p>' +
+        '<p class="evidence"><b>Evidence:</b> ' + escapeHtml(q.evidence) + '</p>' +
+        vocabHtml +
+      '</div>';
+  });
+
+  resultPanel.innerHTML =
+    '<div class="card result-card">' +
+      '<h2 class="result-title">Your Result</h2>' +
+      '<div class="score-circle" style="--pct:' + pct + '">' +
+        '<div class="score-inner">' +
+          '<div class="score-frac">' + score + ' / ' + total + '</div>' +
+          '<div class="score-pct">' + pct + '%</div>' +
+        '</div>' +
+      '</div>' +
+      '<p class="result-msg">' + escapeHtml(msg.en) + '</p>' +
+      '<p class="result-msg-vi">' + escapeHtml(msg.vi) + '</p>' +
+      '<div class="result-actions">' +
+        '<button id="retakeBtn" class="btn primary" type="button">Retake Test</button>' +
+        '<button id="resetBtn2" class="btn ghost" type="button">Reset Test</button>' +
+      '</div>' +
+    '</div>' +
+
+    '<div class="card">' +
+      '<h2>Reading Skills</h2>' +
+      (skillHtml || '<p style="color:#5d6f83;font-size:.92rem;margin:0;">No skill data available.</p>') +
+    '</div>' +
+
+    '<div class="card">' +
+      '<h2>Question-by-Question Review</h2>' +
+      reviewHtml +
+    '</div>';
+
+  const retakeBtn = document.getElementById('retakeBtn');
+  const resetBtn2 = document.getElementById('resetBtn2');
+
+  if (retakeBtn) retakeBtn.addEventListener('click', retakeTest);
+  if (resetBtn2) resetBtn2.addEventListener('click', openResetModal);
+}
+
+/* =========================================================
+   8. RETAKE / RESET
+   ========================================================= */
+function retakeTest(){
+  state = defaultState();
+  state.started = true;
+  state.current = 0;
+  shuffleQuestions();
+  shuffleOptions();
+  saveState();
+  render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function performReset(){
+  clearSaved();
+  state = defaultState();
+  render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function openResetModal(){
+  lastFocusedElement = document.activeElement;
+  modal.hidden = false;
+  modalConfirm.focus();
+}
+
+function closeResetModal(){
+  modal.hidden = true;
+  if (lastFocusedElement && typeof lastFocusedElement.focus === 'function'){
+    lastFocusedElement.focus();
+  }
+}
+
+/* =========================================================
+   9. EVENT LISTENERS
+   ========================================================= */
+startBtn.addEventListener('click', startTest);
+nextBtn.addEventListener('click', nextQuestion);
+prevBtn.addEventListener('click', previousQuestion);
+submitBtn.addEventListener('click', submitTest);
+
+togglePassage.addEventListener('click', function(){
+  const isHidden = passageBody.hidden;
+  passageBody.hidden = !isHidden;
+  togglePassage.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+});
+
+resetTestBtn.addEventListener('click', openResetModal);
+
+clearSavedBtn.addEventListener('click', function(){
+  clearSaved();
+  state = defaultState();
+  render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  showToast('Saved progress cleared.');
+});
+
+modalCancel.addEventListener('click', closeResetModal);
+modalConfirm.addEventListener('click', function(){
+  closeResetModal();
+  performReset();
+  showToast('Test has been reset.');
+});
+
+modal.addEventListener('click', function(e){
+  if (e.target === modal) closeResetModal();
+});
+
+document.addEventListener('keydown', function(e){
+  if (e.key === 'Escape' && !modal.hidden){
+    closeResetModal();
+  }
+});
+
+/* Keyboard shortcut: arrow keys move between questions when not typing */
+document.addEventListener('keydown', function(e){
+  if (!modal.hidden) return;
+  if (!state.started || state.submitted) return;
+  const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+  if (tag === 'input' || tag === 'textarea') return;
+
+  if (e.key === 'ArrowRight'){
+    if (!nextBtn.hidden) nextQuestion();
+  } else if (e.key === 'ArrowLeft'){
+    if (!prevBtn.disabled) previousQuestion();
+  }
+});
+
+/* =========================================================
+   10. BOOT
+   ========================================================= */
+initializeTest();
+</script>
+</body>
+</html>
